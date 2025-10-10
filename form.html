@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign Up - Golden Crust Bakery</title>
+  <link rel="stylesheet" href="form.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;500;600&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body>
+
+  <!-- 🌅 Header -->
+  <header class="form-header">
+    <nav class="navbar">
+      <div class="logo">Golden Crust</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="form.html" class="active">Sign Up</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- 🧁 Form Section -->
+  <main class="form-container">
+    <h2>Welcome to Golden Crust Bakery</h2>
+    <p class="sub-text">Create your account and start shopping freshly baked delights 🍞</p>
+
+    <form id="signup-form">
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required placeholder="Enter your name" />
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required placeholder="you@example.com" />
+      </div>
+
+      <div class="form-group">
+        <label for="birthdate">Birthdate</label>
+        <input type="date" id="birthdate" name="birthdate" required />
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" required placeholder="+20 100 000 0000" />
+      </div>
+
+      <div class="form-group gender-group">
+        <label>Gender</label>
+        <div class="gender-options">
+          <label><input type="radio" name="gender" value="male" required /> Male</label>
+          <label><input type="radio" name="gender" value="female" /> Female</label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="profile-pic">Profile Picture</label>
+        <input type="file" id="profile-pic" name="profile-pic" />
+      </div>
+
+      <div class="form-group check">
+        <label><input type="checkbox" id="terms" required /> I agree to the Terms & Conditions</label>
+      </div>
+
+      <button type="submit" class="submit-btn">Sign Up</button>
+    </form>
+  </main>
+
+  <!-- ⚙️ Footer -->
+  <footer>
+    <p>© 2025 Golden Crust Bakery. All rights reserved.</p>
+    <div class="socials">
+      <a href="#"><img src="images/Facebook.png" alt="Facebook" /></a>
+      <a href="#"><img src="images/Instagram.webp" alt="Instagram" /></a>
+      <a href="#"><img src="images/Twitter.webp" alt="Twitter" /></a>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("signup-form").addEventListener("submit", function (event) {
+      event.preventDefault();
+      const username = document.getElementById("name").value.trim();
+      if (username) {
+        localStorage.setItem("username", username);
+        window.location.href = "shop.html";
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shop - Golden Crust Bakery</title>
+  <link rel="stylesheet" href="shop.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;500;600&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body>
+  <!-- 🌅 Header -->
+  <header class="shop-header">
+    <nav class="navbar">
+      <div class="logo">Golden Crust</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html" class="active">Shop</a></li>
+        <li><a href="form.html">Sign Up</a></li>
+        <li class="nav-right">
+          <span class="welcome-text">Welcome, <label id="username-label">User</label></span>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="shop-intro">
+      <h1>Shop Our Freshly Baked Goods</h1>
+      <p>Pick your favorites and add them to your cart 🍞</p>
+    </div>
+  </header>
+
+  <!-- 🛒 Main Section -->
+  <main class="shop-container">
+    <h2 class="section-title">Our Products</h2>
+
+    <div class="filter-bar">
+      <button class="filter-btn active" data-category="all">All</button>
+      <button class="filter-btn" data-category="bread">Bread</button>
+      <button class="filter-btn" data-category="pastries">Pastries</button>
+      <button class="filter-btn" data-category="cookies">Cookies</button>
+    </div>
+
+    <div class="product-grid">
+      <div class="product-card" data-category="bread">
+        <img src="images/sourdough.jpg" alt="Sourdough Bread" />
+        <h3>Sourdough Bread</h3>
+        <p>Crusty and tangy artisan bread.</p>
+        <span class="price">$4.50</span>
+        <button class="add-btn">Add to Cart</button>
+      </div>
+
+      <div class="product-card" data-category="bread">
+        <img src="images/baguette.jpg" alt="Baguette" />
+        <h3>French Baguette</h3>
+        <p>Classic golden-crust baguette.</p>
+        <span class="price">$3.00</span>
+        <button class="add-btn">Add to Cart</button>
+      </div>
+
+      <div class="product-card" data-category="pastries">
+        <img src="images/croissant.jpg" alt="Croissant" />
+        <h3>Butter Croissant</h3>
+        <p>Flaky layers of buttery perfection.</p>
+        <span class="price">$2.50</span>
+        <button class="add-btn">Add to Cart</button>
+      </div>
+
+      <div class="product-card" data-category="cookies">
+        <img src="images/cookies.jpg" alt="Cookies" />
+        <h3>Chocolate Cookies</h3>
+        <p>Soft, chewy, and rich in flavor.</p>
+        <span class="price">$1.50</span>
+        <button class="add-btn">Add to Cart</button>
+      </div>
+
+      <div class="product-card" data-category="pastries">
+        <img src="images/tart.jpg" alt="Fruit Tart" />
+        <h3>Fruit Tart</h3>
+        <p>Colorful, creamy, and fruity delight.</p>
+        <span class="price">$3.00</span>
+        <button class="add-btn">Add to Cart</button>
+      </div>
+    </div>
+
+    <!-- 🧺 Cart -->
+    <section class="cart-section">
+      <h2>Your Cart</h2>
+      <div id="cart" class="cart"></div>
+      <div class="cart-total">
+        Total: $<span id="total">0.00</span>
+      </div>
+      <button class="clear-btn">Clear Cart</button>
+    </section>
+  </main>
+
+  <!-- ⚙️ Footer -->
+  <footer>
+    <p>© 2025 Golden Crust Bakery. All rights reserved.</p>
+    <div class="socials">
+      <a href="#"><img src="images/Facebook.png" alt="Facebook"></a>
+      <a href="#"><img src="images/Instagram.webp" alt="Instagram"></a>
+      <a href="#"><img src="images/Twitter.webp" alt="Twitter"></a>
+    </div>
+  </footer>
+
+  <script src="shop.js"></script>
+</body>
+</html>
