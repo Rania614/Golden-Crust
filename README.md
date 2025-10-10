@@ -44,6 +44,20 @@ A creative, responsive bakery website showcasing artisan breads, pastries, and o
 - **Google Fonts** – Playfair Display & Poppins.
 - Images sourced from local `images/` folder.
 
+## 🖼 Screenshots
+
+<!-- Add your screenshots here -->
+<!-- Example Markdown format -->
+<!--
+### Home Page
+![Home Page](screenshots/home.png)
+
+### Shop Page
+![Shop Page](screenshots/shop.png)
+
+### Sign-Up Page
+![Sign-Up Page](screenshots/form.png)
+-->
 ---
 
 ## 📂 File Structure
