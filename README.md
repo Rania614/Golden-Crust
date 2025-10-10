@@ -50,13 +50,13 @@ A creative, responsive bakery website showcasing artisan breads, pastries, and o
 <!-- Example Markdown format -->
 
 ### Home Page
-![Home Page](screenshots/home.png)
+![Home Page](screenShots/home.png)
 
 ### Shop Page
-![Shop Page](screenshots/shop.png)
+![Shop Page](screenShots/shop.png)
 
 ### Sign-Up Page
-![Sign-Up Page](screenshots/form.png)
+![Sign-Up Page](screenShots/form.png)
 
 ---
 
