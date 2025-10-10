@@ -48,7 +48,7 @@ A creative, responsive bakery website showcasing artisan breads, pastries, and o
 
 <!-- Add your screenshots here -->
 <!-- Example Markdown format -->
-<!--
+
 ### Home Page
 ![Home Page](screenshots/home.png)
 
@@ -57,7 +57,7 @@ A creative, responsive bakery website showcasing artisan breads, pastries, and o
 
 ### Sign-Up Page
 ![Sign-Up Page](screenshots/form.png)
--->
+
 ---
 
 ## 📂 File Structure
