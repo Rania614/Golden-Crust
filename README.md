@@ -1,10 +1,12 @@
-# 🍞 Golden Crust Bakery Website
+#  Golden Crust Bakery Website
 
 A creative, responsive bakery website showcasing artisan breads, pastries, and online shopping functionality. This project is built with HTML, CSS, and JavaScript, and is suitable for portfolio use.
 
 ---
+##  Demo
+ [Live Demo on GitHub Pages](https://golden-crust-murex.vercel.app/)
 
-## 📝 Features
+##  Features
 
 ### Home Page (`index.html`)
 - Hero header with bakery tagline.
@@ -36,7 +38,7 @@ A creative, responsive bakery website showcasing artisan breads, pastries, and o
 
 ---
 
-## 🎨 Technologies Used
+##  Technologies Used
 
 - **HTML5** – Structure of all pages.
 - **CSS3** – Styling, responsive design, hover effects, overlay backgrounds.
@@ -44,7 +46,7 @@ A creative, responsive bakery website showcasing artisan breads, pastries, and o
 - **Google Fonts** – Playfair Display & Poppins.
 - Images sourced from local `images/` folder.
 
-## 🖼 Screenshots
+##  Screenshots
 
 <!-- Add your screenshots here -->
 <!-- Example Markdown format -->
@@ -60,7 +62,7 @@ A creative, responsive bakery website showcasing artisan breads, pastries, and o
 
 ---
 
-## 📂 File Structure
+##  File Structure
 Golden-Crust-Bakery/
 │
 ├─ index.html
@@ -88,7 +90,7 @@ Golden-Crust-Bakery/
 
 ---
 
-## 🚀 How to Run Locally
+##  How to Run Locally
 
 1. Clone the repository:
    ```bash
@@ -102,7 +104,7 @@ cd golden-crust-bakery
 
 Open any HTML file (index.html, shop.html, or form.html) in your browser.
 
-📌 Notes
+ Notes
 
 The username entered in the Sign-Up page is saved in localStorage and used across pages for a personalized welcome message.
 
@@ -111,6 +113,7 @@ All images should remain in the images/ folder for paths to work correctly.
 Responsive design ensures usability on desktop and tablet devices.
 
 Author
+Rania Abdelnasser
 
 Rania Abdelnasser– Frontend Developer
 
