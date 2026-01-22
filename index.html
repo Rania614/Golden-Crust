@@ -52,19 +52,19 @@
     <p class="section-sub">Delicate, buttery and baked to perfection.</p>
 
     <div class="product-grid">
-      <div class="product-card">
+      <div class="product-card" onclick="openModal('croissant')">
         <img src="images/croissant.jpg" alt="Croissant">
         <h3>Butter Croissant</h3>
         <p>Flaky and golden, made with pure butter.</p>
         <span class="price">$2.50</span>
       </div>
-      <div class="product-card">
+      <div class="product-card" onclick="openModal('cookies')">
         <img src="images/cookies.jpg" alt="Cookies">
         <h3>Chocolate Chip Cookies</h3>
         <p>Soft, chewy and full of chocolate chunks.</p>
         <span class="price">$1.50</span>
       </div>
-      <div class="product-card">
+      <div class="product-card" onclick="openModal('tart')">
         <img src="images/tart.jpg" alt="Tart">
         <h3>Fruit Tart</h3>
         <p>Colorful and creamy, topped with fresh fruits.</p>
@@ -143,6 +143,21 @@
 </section>
 
 
+<!-- Product Modal -->
+<div id="product-modal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <div class="modal-body">
+      <img id="modal-img" src="" alt="">
+      <h2 id="modal-title"></h2>
+      <p id="modal-description"></p>
+      <span id="modal-price" class="price"></span>
+      <div id="modal-details"></div>
+    </div>
+  </div>
+</div>
+
+
   <!-- ⚙️ Footer -->
   <footer>
     <p>© 2025 Golden Crust Bakery. All rights reserved.</p>
@@ -162,6 +177,61 @@
       navbar.classList.remove("scrolled");
     }
   });
+
+  // Product Modal Functions
+  function openModal(product) {
+    const modal = document.getElementById('product-modal');
+    const img = document.getElementById('modal-img');
+    const title = document.getElementById('modal-title');
+    const desc = document.getElementById('modal-description');
+    const price = document.getElementById('modal-price');
+    const details = document.getElementById('modal-details');
+
+    const products = {
+      croissant: {
+        img: 'images/croissant.jpg',
+        title: 'Butter Croissant',
+        desc: 'Flaky and golden, made with pure butter.',
+        price: '$2.50',
+        details: '<h3>Ingredients:</h3><p>Flour, butter, yeast, salt, sugar.</p><h3>Nutritional Info:</h3><p>Calories: 250 | Fat: 12g | Carbs: 28g | Protein: 5g</p><h3>Allergen Info:</h3><p>Contains gluten, dairy.</p>'
+      },
+      cookies: {
+        img: 'images/cookies.jpg',
+        title: 'Chocolate Chip Cookies',
+        desc: 'Soft, chewy and full of chocolate chunks.',
+        price: '$1.50',
+        details: '<h3>Ingredients:</h3><p>Flour, butter, chocolate chips, brown sugar, eggs, vanilla.</p><h3>Nutritional Info:</h3><p>Calories: 180 | Fat: 9g | Carbs: 24g | Protein: 2g</p><h3>Allergen Info:</h3><p>Contains gluten, dairy, eggs.</p>'
+      },
+      tart: {
+        img: 'images/tart.jpg',
+        title: 'Fruit Tart',
+        desc: 'Colorful and creamy, topped with fresh fruits.',
+        price: '$3.00',
+        details: '<h3>Ingredients:</h3><p>Pastry crust, custard, strawberries, blueberries, kiwi, raspberries.</p><h3>Nutritional Info:</h3><p>Calories: 300 | Fat: 15g | Carbs: 35g | Protein: 4g</p><h3>Allergen Info:</h3><p>Contains gluten, dairy, eggs.</p>'
+      }
+    };
+
+    const p = products[product];
+    img.src = p.img;
+    title.textContent = p.title;
+    desc.textContent = p.desc;
+    price.textContent = p.price;
+    details.innerHTML = p.details;
+
+    modal.style.display = 'block';
+  }
+
+  function closeModal() {
+    document.getElementById('product-modal').style.display = 'none';
+  }
+
+  // Close modal when clicking outside
+  window.onclick = function(event) {
+    const modal = document.getElementById('product-modal');
+    if (event.target == modal) {
+      modal.style.display = 'none';
+    }
+  }
 </script>
 
 </html>
