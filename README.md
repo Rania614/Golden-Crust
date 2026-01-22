@@ -117,3 +117,9 @@ Rania Abdelnasser
 
 Rania Abdelnasser– Frontend Developer
 
+## Edit by asmaa
+## Breadcrumb: Using Git Branches
+When making changes, create a new branch instead of pushing directly to main:
+git checkout -b <branch-name>
+git push -u origin <branch-name>
+This makes PRs easier to review.
