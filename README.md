@@ -4,7 +4,7 @@ A creative, responsive bakery website showcasing artisan breads, pastries, and o
 
 ---
 ##  Demo
- [Live Demo on GitHub Pages](https://golden-crust-murex.vercel.app/)
+ [Live Demo](https://golden-crust-murex.vercel.app/)
 
 ##  Features
 
@@ -35,7 +35,6 @@ A creative, responsive bakery website showcasing artisan breads, pastries, and o
 - Redirects to Shop page after successful sign-up.
 - Compact card design for all screen sizes.
 
-
 ---
 
 ##  Technologies Used
@@ -47,9 +46,6 @@ A creative, responsive bakery website showcasing artisan breads, pastries, and o
 - Images sourced from local `images/` folder.
 
 ##  Screenshots
-
-<!-- Add your screenshots here -->
-<!-- Example Markdown format -->
 
 ### Home Page
 ![Home Page](screenShots/home.png)
@@ -63,7 +59,8 @@ A creative, responsive bakery website showcasing artisan breads, pastries, and o
 ---
 
 ##  File Structure
-Golden-Crust-Bakery/
+```text
+Golden-Crust/
 │
 ├─ index.html
 ├─ shop.html
@@ -71,46 +68,39 @@ Golden-Crust-Bakery/
 ├─ style.css
 ├─ shop.css
 ├─ form.css
+├─ shop.js
 ├─ images/
-│ ├─ sourdough.jpg
-│ ├─ rye-bread.jpg
-│ ├─ baguette.jpg
-│ ├─ brown-bread.jpg
-│ ├─ multigrain.jpg
-│ ├─ olive-bread.jpg
-│ ├─ croissant.jpg
-│ ├─ cookies.jpg
-│ ├─ tart.jpg
-│ ├─ Custom-Cakes.jpg
-│ ├─ Delivery.jpg
-│ ├─ Catering.jpg
-│ └─ social media icons...
+│  ├─ sourdough.jpg
+│  ├─ rye-bread.jpg
+│  └─ ...
 └─ README.md
-
+```
 
 ---
 
 ##  How to Run Locally
 
-1. Clone the repository:
+1. **Clone the repository:**
    ```bash
-   git clone https://github.com/your-username/golden-crust-bakery.git
+   git clone https://github.com/your-username/Golden-Crust.git
+   ```
 
+2. **Navigate to the project folder:**
+   ```bash
+   cd Golden-Crust
+   ```
 
-Navigate to the project folder:
+3. **Open the project:**
+   Extract and open `index.html` in your browser.
 
-cd golden-crust-bakery
+---
 
+##  Notes
 
-Open any HTML file (index.html, shop.html, or form.html) in your browser.
+- The username entered in the Sign-Up page is saved in `localStorage` and used across pages for a personalized welcome message.
+- All images should remain in the `images/` folder for paths to work correctly.
+- Responsive design ensures usability on desktop and mobile devices.
 
- Notes
-
-The username entered in the Sign-Up page is saved in localStorage and used across pages for a personalized welcome message.
-
-All images should remain in the images/ folder for paths to work correctly.
-
-Responsive design ensures usability on desktop and tablet devices.
 
 Author
 Rania Abdelnasser
